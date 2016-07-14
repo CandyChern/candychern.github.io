@@ -1,0 +1,36 @@
+body{
+	margin: 0px;
+	background-color: rgb(255,255,204);
+	font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+
+/*头部CSS*/
+.firHead,.secHead{
+	z-index: 100;
+	position: fixed;
+	top: 0px;
+	background-color: rgba(255,204,204,0.9);
+	width: 100%;
+}
+.firHead{
+	height: 100px;
+	visibility: visible;/*滚动条于初始状态是隐藏，滚动后显示，firHead隐藏*/
+}
+.secHead{
+	height: 50px;
+	visibility: hidden;/*滚动条于初始状态是隐藏，滚动后显示，firHead隐藏*/
+}
+
+/*体部CSS*/
+.body{
+	position: relative;
+	height: 800px;
+	width: 100%;
+	margin: 100px 0px 0px 0px;
+}
+/*底部CSS*/
+.bottom{
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
