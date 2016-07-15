@@ -5,20 +5,39 @@ body{
 }
 
 /*头部CSS*/
-.firHead,.secHead{
+.Head{
 	z-index: 100;
 	position: fixed;
 	top: 0px;
 	background-color: rgba(255,204,204,0.9);
 	width: 100%;
+	transition: all ease 0.3s;
 }
-.firHead{
+.Head_logo{/*logo通用css*/
+	cursor: pointer;
+}
+#firHead{
 	height: 100px;
-	visibility: visible;/*滚动条于初始状态是隐藏，滚动后显示，firHead隐藏*/
+	opacity: 1;/*滚动条于初始状态是显示，滚动后显示，firHead隐藏*/
 }
-.secHead{
+#firHead .Head_logo{
+	position: absolute;
+	top: 8px;
+	left: 5%;
+	width: 233px;
+	height: 83px;
+	background-image: url(../img/logo.png);
+	background-size: cover;
+	opacity: 1;
+	transition: all linear 0.2s;
+}
+#firHead .Head_logo:hover{
+	opacity: 0.7;
+}
+
+#secHead{
 	height: 50px;
-	visibility: hidden;/*滚动条于初始状态是隐藏，滚动后显示，firHead隐藏*/
+	opacity: 0;/*滚动条于初始状态是隐藏，滚动后显示，firHead隐藏*/
 }
 
 /*体部CSS*/
